@@ -65,7 +65,7 @@ def post_label(photo, labels, bucket):
 
 
 def lambda_handler(event, context):
-    logger.info("A photo has been put into S3!")
+    logger.info("A photo has been put into S3")
     for record in event['Records']:
         s3 = record['s3']
         bucket = s3['bucket']['name']
